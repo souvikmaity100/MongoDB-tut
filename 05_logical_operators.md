@@ -34,31 +34,31 @@ MongoDB provides several logical operators that allow you to combine multiple qu
 
 ### $and Example
 Find documents where the age is greater than 25 and the status is "A".
-```json
+```
 db.collection.find({ $and: [ { age: { $gt: 25 } }, { status: "A" } ] })
 ```
 
 ### $or Example
 Find documents where the age is less than 25 or the status is "A".
-```json
+```
 db.collection.find({ $or: [ { age: { $lt: 25 } }, { status: "A" } ] })
 ```
 
 ### $not Example
 Find documents where the age is not greater than 25.
-```json
+```
 db.collection.find({ age: { $not: { $gt: 25 } } })
 ```
 
 ### $nor Example
 Find documents where neither the age is greater than 25 nor the status is "A".
-```json
+```
 db.collection.find({ $nor: [ { age: { $gt: 25 } }, { status: "A" } ] })
 ```
 
 ### $expr Example
 Find documents where the value of field `a` is greater than the value of field `b`.
-```json
+```
 db.collection.find({ $expr: { $gt: ["$a", "$b"] } })
 ```
 
