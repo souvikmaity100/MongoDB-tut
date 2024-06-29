@@ -54,12 +54,18 @@ db.<collection-name>.findOne({key:value})
 
 ## Import JSON Data in MongoDB (command-line utilities) [NB: MongoDB Database Tools should be install for this command]
 
-> mongoimport < json-file-path > -d database_name -c collection_name
+```
+ mongoimport < json-file-path > -d database_name -c collection_name
+ ```
 
 #### For JSON Array
 
-> mongoimport jsonfile.json -d database_name -c collection_name --jsonArray
+```
+ mongoimport jsonfile.json -d database_name -c collection_name --jsonArray
+ ```
 
 ## Export JSON Data in MongoDb (command-line utilities)
 
-> mongoexport -d database_name -c collection_name -o < output-file-location >
+```
+ mongoexport -d database_name -c collection_name -o < output-file-location >
+ ```
