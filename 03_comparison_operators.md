@@ -6,42 +6,42 @@ MongoDB provides a range of comparison operators for querying documents in a col
 ## List of Comparison Operators
 
 1. **$eq**: Matches values that are equal to a specified value.
-   ```json
+   ```
    { field: { $eq: value } }
    ```
 
 2. **$ne**: Matches all values that are not equal to a specified value.
-   ```json
+   ```
    { field: { $ne: value } }
    ```
 
 3. **$gt**: Matches values that are greater than a specified value.
-   ```json
+   ```
    { field: { $gt: value } }
    ```
 
 4. **$gte**: Matches values that are greater than or equal to a specified value.
-   ```json
+   ```
    { field: { $gte: value } }
    ```
 
 5. **$lt**: Matches values that are less than a specified value.
-   ```json
+   ```
    { field: { $lt: value } }
    ```
 
 6. **$lte**: Matches values that are less than or equal to a specified value.
-   ```json
+   ```
    { field: { $lte: value } }
    ```
 
 7. **$in**: Matches any of the values specified in an array.
-   ```json
+   ```
    { field: { $in: [value1, value2, ...] } }
    ```
 
 8. **$nin**: Matches none of the values specified in an array.
-   ```json
+   ```
    { field: { $nin: [value1, value2, ...] } }
    ```
 
