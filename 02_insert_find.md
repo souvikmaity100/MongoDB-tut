@@ -18,7 +18,7 @@ db.<collection-name>.insertMany([
 ]);
 ```
 
-### Orderd and Unorderd Insert
+### Ordered and Unorderd Insert
 
 > Optional. If true, perform an ordered insert of the documents in the array, and if an error occurs with one of documents, MongoDB will return without processing the remaining documents in the array.
 
@@ -27,7 +27,7 @@ db.<collection-name>.insertMany([
 > If false, perform an unordered insert, and if an error occurs with one of documents, continue processing the remaining documents in the array.
 
 ```
-db.<collection-name>.insertMany([doc1, doc2, ....], {orderd: false})
+db.<collection-name>.insertMany([doc1, doc2, ....], {ordered: false})
 ```
 
 ---
